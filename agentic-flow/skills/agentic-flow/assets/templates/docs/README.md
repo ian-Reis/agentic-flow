@@ -1,6 +1,6 @@
 # Documentation - {{PROJECT_NAME}}
 
-Index of everything in `docs/`. Agent rules and the code map are in the root `CLAUDE.md`.
+Index of everything in `{{DOCS}}/`. Agent rules and the code map are in the root `CLAUDE.md`.
 
 ## Where to start
 | You want to... | Read |
@@ -27,4 +27,4 @@ Index of everything in `docs/`. Agent rules and the code map are in the root `CL
 6. Every new document goes in the folder of its kind and gets a line here.
 7. Renaming or moving a document means updating every link to it.
 8. No personal data or machine-specific absolute paths.
-9. Screenshots, videos and archives live outside `docs/` (e.g. `assets/`) and are linked.
+9. Screenshots, videos and archives live outside `{{DOCS}}/` (e.g. `assets/`) and are linked.
