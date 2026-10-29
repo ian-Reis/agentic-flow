@@ -18,6 +18,8 @@ These keep the documentation small enough to read and trustworthy enough to act 
 
 ## Layout
 
+The tree below sits at the **flow root**: `docs/` for a new project, `docs/agentic/` when the project already had its own documentation. In the second case the project's docs are never moved, renamed or edited; the only touches outside the flow root are an appended section in an existing `CLAUDE.md` and one appended link line in an existing docs index.
+
 ```
 CLAUDE.md                  small entry point: what this is, commands, invariants,
                            source of truth, and an index "task touches X -> read Y"
