@@ -1,6 +1,6 @@
 # Report - Task NNN - Short title
 
-Date: YYYY-MM-DD | Builder: <name> | Task prompt: `docs/tasks/NNN-<slug>.md`
+Date: YYYY-MM-DD | Builder: <name> | Task prompt: `{{DOCS}}/tasks/NNN-<slug>.md`
 
 ## What changed
 - <files / systems, short list>
