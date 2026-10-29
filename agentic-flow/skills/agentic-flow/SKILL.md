@@ -1,9 +1,9 @@
 ---
-name: agent-flow
+name: agentic-flow
 description: Set up and run a file-based multi-agent workflow for a NEW project - an Owner who decides, a Director who plans and writes task prompts, and Builders who execute from a queue and prove their work with reports. Covers the task queue, task prompts, decision log, reports with evidence, session handoffs and model routing, all kept as plain files so no agent depends on memory. Use this skill whenever the user starts a new project that agents will build, wants to organize agent work, split work into tasks or prompts for sub-agents or other sessions, create a backlog/queue/orchestration setup, hand work off between sessions, record decisions, or mentions director/builder, orchestrator, sub-agents, "docs for agents", or "a flow for agents" - even if they do not name the method. Also use it to resume work in a project that was bootstrapped with this flow (docs/flow/ exists). Not for one-off coding tasks, and not for reshaping an existing project that already has its own conventions.
 ---
 
-# Agent Flow
+# Agentic Flow
 
 Agents forget everything between sessions, and parallel agents cannot see each other's heads. This flow fixes both by making **files the only memory and the only channel**: the Owner decides, the Director turns decisions into written, verifiable tasks, Builders execute them and leave evidence. Anything not written down does not exist for the next agent.
 
@@ -11,11 +11,13 @@ It is project-agnostic on purpose. Nothing here assumes a language, engine or to
 
 ## Step 0 - Work out the situation
 
+Paths written `docs/...` in this skill mean the project's **flow root**: `docs/` for a new project, or `docs/agentic/` when the project already had its own `docs/` (the flow then sits beside their documentation and never edits it). `scripts/init_project.py` picks the root and `scripts/lint_docs.py` finds it.
+
 | You see | Do this |
 |---|---|
-| New project, no `docs/flow/` | **Bootstrap**: read `references/bootstrap.md`, then run `scripts/init_project.py` |
-| `docs/flow/` exists (made by this flow) | **Resume**: read `CLAUDE.md`, `docs/flow/context.md`, `QUEUE.md`, `DECISIONS.md`, `HANDOFF.md` (in that order), then Step 1 |
-| Existing project with its own structure and no `docs/flow/` | Do not impose this flow or move their files. Say the flow is meant for new projects and offer to borrow single pieces (the task prompt template, the report format) if they want |
+| New project, no flow yet | **Bootstrap**: read `references/bootstrap.md`, then run `scripts/init_project.py` (or the user's `/agentic-flow:init`) |
+| `docs/flow/` or `docs/agentic/flow/` exists (made by this flow) | **Resume**: read `CLAUDE.md`, `<flow root>/flow/context.md`, `QUEUE.md`, `DECISIONS.md`, `HANDOFF.md` (in that order), then Step 1 |
+| Existing project with its own docs and conventions, no flow | Do not reshape or move their files. Install the flow isolated in `docs/agentic/` (the init command does this) and append, never rewrite, a short section to their `CLAUDE.md`. If the user wants less than that, offer to borrow single pieces (the task prompt template, the report format) |
 
 ## Step 1 - Know your role (ask once if unclear)
 
