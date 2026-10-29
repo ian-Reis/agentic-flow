@@ -24,13 +24,13 @@ Temporary test configuration must be reverted before a task is finished.
 <Code style, comments, naming, UI/visual standard, language of code and docs.>
 
 ## Queue and coordination
-- The queue is `docs/flow/QUEUE.md`. Reserve a task (`in-progress` + your name) before touching anything.
+- The queue is `{{DOCS}}/flow/QUEUE.md`. Reserve a task (`in-progress` + your name) before touching anything.
 - Do not edit another Builder's prompt, or any prompt that is not yours.
 - Doubt that would change the result: write it in `QUESTIONS.md`, mark `blocked`, take the next task.
 - You never set `done`; set `verify` and the Director verifies independently.
 
 ## Report
-Format and evidence rules: see the `agent-flow` skill, `references/report.md`. Template: `docs/reports/_TEMPLATE.md`.
+Template: `{{DOCS}}/reports/_TEMPLATE.md`. Full format and evidence rules: the `agentic-flow` skill, `references/report.md` (if the plugin is installed).
 
 ## Current priorities
 <What comes before everything else right now, and for how long. Rewrite freely.>
