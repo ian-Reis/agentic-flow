@@ -1,6 +1,6 @@
 # CLAUDE.md - {{PROJECT_NAME}}
 
-Front door for every agent. Keep it short and current. Detail lives in `docs/systems/`; only rules that always apply stay here.
+Front door for every agent. Keep it short and current. Detail lives in `{{DOCS}}/systems/`; only rules that always apply stay here.
 
 ## What this is
 <One paragraph: what the project is, who it is for, and what "done" means for the first milestone.>
@@ -20,9 +20,9 @@ Front door for every agent. Keep it short and current. Detail lives in `docs/sys
 - <rule>
 
 ## Working method
-This project uses the `agent-flow` method. Read `docs/flow/context.md` before any task; the queue is `docs/flow/QUEUE.md`; decisions are in `docs/flow/DECISIONS.md`.
+This project uses the `agentic-flow` method. Read `{{DOCS}}/flow/context.md` before any task; the queue is `{{DOCS}}/flow/QUEUE.md`; decisions are in `{{DOCS}}/flow/DECISIONS.md`.
 
 ## Index: the task touches X -> read Y
 | Task touches | Read |
 |---|---|
-| <area> | `docs/systems/<area>.md` |
+| <area> | `{{DOCS}}/systems/<area>.md` |
