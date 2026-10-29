@@ -1,0 +1,5 @@
+{
+  "name": "agentic-flow",
+  "description": "A file-based multi-agent workflow for any new project: Owner decides, Director plans and writes task prompts, Builders execute from a queue and prove their work. Includes /agentic-flow:init to scaffold it.",
+  "version": "0.2.0"
+}
