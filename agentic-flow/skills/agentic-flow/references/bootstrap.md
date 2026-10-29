@@ -20,7 +20,7 @@ If the answers are obvious from the repository, do not ask.
 python <skill-dir>/scripts/init_project.py --target <project-dir> --name "<Project name>"
 ```
 
-It creates `CLAUDE.md` and `docs/` from `assets/templates/` and fills in the name and date. It skips files that already exist, so it is safe to re-run.
+It creates `CLAUDE.md` and the flow tree from `assets/templates/` and fills in the name, date and paths. It skips files that already exist, so it is safe to re-run. If the project already has files in `docs/`, the flow tree goes into `docs/agentic/` instead (`--docs-dir` overrides the choice); the last line it prints, `FLOW_ROOT=<dir>`, is the path every later step uses. An existing `CLAUDE.md` is skipped, so append the flow section to it by hand and leave the rest as it is.
 
 ## 3. Fill the three files that carry the project
 
