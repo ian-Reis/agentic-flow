@@ -1,0 +1,14 @@
+{
+  "name": "agentic-flow-local",
+  "description": "Local marketplace for the agentic-flow plugin",
+  "owner": {
+    "name": "f16"
+  },
+  "plugins": [
+    {
+      "name": "agentic-flow",
+      "source": "./agentic-flow",
+      "description": "File-based multi-agent workflow (Owner / Director / Builders) with /agentic-flow:init to scaffold it in a new project."
+    }
+  ]
+}
