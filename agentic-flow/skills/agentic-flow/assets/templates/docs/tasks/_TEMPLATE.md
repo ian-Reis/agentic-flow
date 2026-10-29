@@ -1,7 +1,7 @@
 # Task NNN - Short title
 
 You are the engineer responsible for this task of the project {{PROJECT_NAME}}.
-**Before anything else, read `docs/flow/context.md` in full**, plus: <sections of CLAUDE.md / system docs>.
+**Before anything else, read `{{DOCS}}/flow/context.md` in full**, plus: <sections of CLAUDE.md / system docs>.
 
 - **Needs:** NNN, NNN (if any is not `done`, stop and report)
 - **Areas touched:** <areas> -> **mandatory checks:** <unit + smoke for those areas>
@@ -33,4 +33,4 @@ The tempting things to leave alone.
 - Mandatory checks passing; test state restored.
 
 ## Delivery
-Report in `docs/reports/YYYY-MM-DD-NNN-<slug>.md` (template in that folder), docs updated, list of what the Owner must do.
+Report in `{{DOCS}}/reports/YYYY-MM-DD-NNN-<slug>.md` (template in that folder), docs updated, list of what the Owner must do.
