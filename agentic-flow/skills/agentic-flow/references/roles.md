@@ -16,7 +16,7 @@ If the role is not obvious, ask once: "Am I the Director or a Builder in this se
 
 Phrase to open a Builder session (give it to the Owner at the end of bootstrap):
 
-> Read `docs/flow/context.md` and the Builder loop in the `agent-flow` skill. You are a Builder. Take the next `ready` task from `docs/flow/QUEUE.md`.
+> Read `docs/flow/context.md` and the Builder loop in the `agentic-flow` skill. You are a Builder. Take the next `ready` task from `docs/flow/QUEUE.md`.
 
 ## Director details
 
